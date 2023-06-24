@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Quiz(models.Model):
+    title = models.CharField(max_lenth = 200)
+    body = models.TextField()
+    answer = models.IntergerField()
